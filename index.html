@@ -3,66 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Ejercicios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 1rem 0;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            color: #888;
-            margin: 2rem 0 1rem 0;
-        }
-    </style>
+    <title>Portfolio Personal - DIWEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Mi Portfolio de Ejercicios</h1>
-        <p>Bienvenido/a a mi colección de ejercicios de desarrollo web.</p>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio DIWEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Ejercicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container py-5 text-center">
+        <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="Avatar" class="rounded-circle mb-3" width="120" height="120">
+        <h1 class="fw-bold">Tu Nombre</h1>
+        <p class="lead mb-1">Estudiante de 2º DAW</p>
+        <p class="mb-3">Módulo: <span class="fw-semibold">Diseño de Interfaces Web (DIWEB)</span></p>
+        <a href="https://github.com/tuusuario" class="btn btn-outline-dark btn-sm" target="_blank">
+            <i class="bi bi-github"></i> Mi GitHub
+        </a>
     </header>
-    <main>
-        <h2>Ejercicios</h2>
-        <ul>
-            <li><a href="tema-01/actitvidades/a10/home.html">Web Básica Cádiz Turismo</a></li>
-            <li><a href="ejercicio2.html">Ejercicio 2: Título del ejercicio</a></li>
-            <li><a href="ejercicio3.html">Ejercicio 3: Título del ejercicio</a></li>
-            <!-- Agrega más ejercicios aquí -->
-        </ul>
+    <main class="container" id="portfolio">
+        <h2 class="mb-4 text-center">Mis Ejercicios</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Page</h5>
+                        <p class="card-text">Página principal del portfolio.</p>
+                        <a href="index.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Básica Cádiz Turismo</h5>
+                        <p class="card-text">Ejercicio 1: Web básica sobre turismo en Cádiz.</p>
+                        <a href="tema-01/actitvidades/a10/home.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 2</h5>
+                        <p class="card-text">Título del ejercicio 2.</p>
+                        <a href="ejercicio2.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 3</h5>
+                        <p class="card-text">Título del ejercicio 3.</p>
+                        <a href="ejercicio3.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 4</h5>
+                        <p class="card-text">Título del ejercicio 4.</p>
+                        <a href="ejercicio4.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 5</h5>
+                        <p class="card-text">Título del ejercicio 5.</p>
+                        <a href="ejercicio5.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 6</h5>
+                        <p class="card-text">Título del ejercicio 6.</p>
+                        <a href="ejercicio6.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 7</h5>
+                        <p class="card-text">Título del ejercicio 7.</p>
+                        <a href="ejercicio7.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        &copy; 2024 Mi Portfolio
+    <footer class="text-center text-muted py-4 mt-5">
+        &copy; 2025 Juan Manuel Pinto Garrucho · DIWEB · 2º DAW
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Iconos Bootstrap opcionales -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </body>
 </html>
