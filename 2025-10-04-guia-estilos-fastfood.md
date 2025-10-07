@@ -59,7 +59,7 @@ Se prioriza una fuente **sans-serif** moderna y clara que evoque velocidad.
 * **Uso:** Sencillez y reconocimiento universal (Carrito, Menú/Hamburguesa, Ubicación).
 
 ### Ilustraciones y Fotografía
-* **Base:** **Fotografía Real** de alta calidad de la comida (estilo 'food-porn': primeros planos vibrantes y saturados).
+* **Base:** **Fotografía Real** de alta calidad de la comida (primeros planos vibrantes y saturados).
 * **Ilustraciones:** Limitadas a estilos **minimalistas y planos** para representar servicios o beneficios ("Entrega Rápida").
 * **Coherencia:** Iconos e ilustraciones usarán el **Amarillo Mostaza** y **Rojo Ladrillo** para detalles.
 
