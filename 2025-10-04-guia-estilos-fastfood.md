@@ -10,7 +10,7 @@ Una guía de estilo concisa y energética para diseñar una experiencia de pedid
 | :--- | :--- |
 | **Tipo de Negocio** | Restaurante de **comida rápida** (Fast Food): Hamburguesas, patatas y batidos. Énfasis en **rapidez** y facilidad de pedido online/recogida. |
 | **Valores a Transmitir** | Rápido, **Moderno**, Energético, Amigable y de **Alta Calidad** (a pesar de la velocidad). |
-| **Público Objetivo** | **Jóvenes** (18-30), **Familias jóvenes** y **Oficinistas/Estudiantes** que buscan opciones rápidas y accesibles. |
+| **Público Objetivo** | **Jóvenes**, **Familias jóvenes** y **Oficinistas/Estudiantes** que buscan opciones rápidas y accesibles. |
 
 ---
 
