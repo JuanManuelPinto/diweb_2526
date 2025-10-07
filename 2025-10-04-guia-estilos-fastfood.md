@@ -1,10 +1,3 @@
----
-layout: post
-title: "Guía de Estilo: Interfaz Web de un Restaurante Fast Food Moderno"
-author: Juan Manuel Pinto Garrucho
-date: 2025-10-04
----
-
 # Guía de Estilo para la Interfaz Web de un Restaurante Fast Food
 
 Una guía de estilo concisa y energética para diseñar una experiencia de pedido online **rápida, moderna** y que despierte el **apetito**.
