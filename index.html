@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Futurista | Juan Manuel Pinto Garrucho</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1 class="logo">🚀 Mi Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="actividades.html">Actividades</a></li>
-        <li><a href="#">Diseño Web</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Juan Manuel Pinto Garrucho</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">JM<span>Coder</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <section class="hero">
-    <div class="content">
-      <h2>👋 ¡Hola! Soy <span class="typewriter" id="nombre"></span></h2>
-      <p class="about-text">
-        Soy estudiante del <strong>Grado Superior de Desarrollo de Aplicaciones Web (DAW)</strong>,
-        donde aprendo a crear aplicaciones y sitios web modernos, eficientes y visualmente atractivos.
-        <br><br>
-        Este portfolio forma parte del módulo de <strong>Diseño de Interfaces Web</strong>, donde recopilo
-        y presento las actividades, prácticas y proyectos desarrollados a lo largo del curso.
-      </p>
-      <a href="actividades.html" class="btn neon-btn">Ver mis actividades</a>
-    </div>
+        <section class="hero">
+            <div class="content">
+                <div class="profile-container">
+                    <img src="img/perfil.jpg" alt="Juan Manuel Pinto Garrucho"
+                        class="profile-pic">
+                </div>
 
-    <!-- Efectos visuales -->
-    <div class="glow-circle"></div>
-    <div class="glow-line"></div>
-  </section>
+                <h2>👋 ¡Hola! Soy <span class="typed-text"></span></h2>
+                <p>
+                    Soy estudiante del <strong>Grado Superior de Desarrollo de
+                        Aplicaciones Web (DAW)</strong>,
+                    donde aprendo a crear aplicaciones y sitios web modernos,
+                    eficientes y visualmente atractivos.
+                    <br><br>
+                    Este portfolio forma parte del módulo de <strong>Diseño de
+                        Interfaces Web</strong>, donde recopilo
+                    y presento las actividades, prácticas y proyectos
+                    desarrollados a lo largo del curso.
+                </p>
 
-  <footer>
-    <p>© 2025 Juan Manuel Pinto Garrucho | Portfolio Futurista</p>
-  </footer>
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>🎓 Formación</h3>
+                        <p>Grado Superior en Desarrollo de Aplicaciones Web
+                            (DAW)</p>
+                    </div>
+                    <div class="card">
+                        <h3>💡 Módulo</h3>
+                        <p>Diseño de Interfaces Web</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏫 Centro</h3>
+                        <p>IES Los Remedios (Ubrique)</p>
+                    </div>
+                </div>
 
-  <!-- Enlace al JS -->
-  <script src="js/main.js"></script>
-</body>
+                <a href="actividades.html" class="btn">🚀 Ver mis
+                    actividades</a>
+
+                <div class="socials">
+                    <a href="https://github.com/tuusuario"
+                        target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tuusuario/"
+                        target="_blank">LinkedIn</a>
+                    <a href="mailto:jpingar2211@g.educaand.es">Correo</a>
+                </div>
+            </div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
 </html>
