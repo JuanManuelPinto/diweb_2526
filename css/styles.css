@@ -206,3 +206,27 @@ footer {
   font-size: 0.9em;
   background: rgba(0, 0, 0, 0.6);
 }
+
+/* Efecto de máquina de escribir */
+.typewriter {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  border-right: 3px solid #00ffff;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    border-color: #00ffff;
+  }
+
+  51%,
+  100% {
+    border-color: transparent;
+  }
+}
