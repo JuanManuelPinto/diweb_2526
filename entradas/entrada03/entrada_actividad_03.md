@@ -1,4 +1,4 @@
-# UI vs. UX: Conceptos Fundamentales de Interacción Digital
+# 🎨 UI vs. UX: Conceptos Fundamentales de Interacción Digital
 
 Este documento presenta una diferenciación clara y concisa entre la **Interfaz de Usuario (UI)** y la **Experiencia de Usuario (UX)**, pilares en el diseño de productos y sistemas digitales.
 
