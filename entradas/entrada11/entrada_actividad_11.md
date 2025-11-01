@@ -116,3 +116,11 @@ Se implementará un sistema de diseño modular y flexible.
 | **Navegación Móvil** | **Barra inferior fija** con iconos clave (Menú, Carrito) para acceso con el pulgar. |
 | **Formularios** | Borde del campo de texto resaltado con **Amarillo Mostaza** al estar en foco (`focus`). |
 | **Menú Móvil** | Desplegable de **Menú de Hamburguesa** que cubre lateralmente la pantalla. |
+
+---
+
+## 9. Guía de estilos en formato visual
+
+Esta es la guia de estilos en formato visula (**Realizado en Figma**).
+
+**![Guia estilos en Figma](guia-estilos.png)**

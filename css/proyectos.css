@@ -1,0 +1,242 @@
+/* ---- GENERAL ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0a0a0a, #020202 90%);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ---- HEADER ---- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00ffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* ---- CONTENIDO ---- */
+.contenedor {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+    margin-bottom: 60px;
+    animation: fadeInDown 1s ease-in-out forwards;
+}
+
+/* ---- GRID DE ACTIVIDADES ---- */
+.grid-actividades {
+    display: grid;
+    /* Adjusted to create more compact cards, allowing up to 3 columns on larger screens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Reduced gap slightly for compactness */
+    justify-content: center;
+    align-items: start; /* Align items to the start so they don't stretch */
+    max-width: 1200px; /* Max width for the grid to keep content centered */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* ---- CARD ---- */
+.actividad-card {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    padding: 20px; /* Slightly reduced padding */
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1.2s ease both;
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push button to the bottom */
+    height: auto; /* Allow height to adjust based on content */
+    max-width: 350px; /* Max width for individual cards */
+    margin: 0 auto; /* Center cards within their grid cell */
+}
+
+.actividad-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4), 0 0 60px rgba(0, 255, 255, 0.2);
+}
+
+/* Imagen */
+.img-container {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Slightly reduced margin */
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    aspect-ratio: 16/9; /* Maintain a consistent aspect ratio for images */
+    width: 100%; /* Ensure image container fills card width */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%; /* Make image fill the container */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.actividad-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Títulos y texto */
+.actividad-card h3 {
+    color: #00ffff;
+    margin-bottom: 8px; /* Slightly reduced margin */
+    font-size: 1.2em; /* Slightly smaller font size */
+}
+
+.actividad-card p {
+    color: #d0d0d0;
+    font-size: 0.9em; /* Slightly smaller font size */
+    line-height: 1.5em; /* Adjusted line height */
+    margin-bottom: 15px; /* Slightly reduced margin */
+    flex-grow: 1; /* Allow paragraph to grow and take available space */
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 9px 22px; /* Slightly adjusted padding */
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.btn:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 25px #00ffff, 0 0 60px #00ffff;
+}
+
+/* ---- ANIMACIONES ---- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 30px; /* Adjust header padding */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow navigation items to wrap */
+        justify-content: center;
+    }
+
+    .titulo {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+    }
+
+    .grid-actividades {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        padding: 0 20px; /* Add padding to grid on small screens */
+    }
+
+    .actividad-card {
+        padding: 20px;
+        max-width: 100%; /* Allow cards to take full width on small screens */
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    background: linear-gradient(90deg, #0a0a0a, #111, #0a0a0a);
+    color: #ccc;
+    font-family: "Orbitron", sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer strong {
+    color: #00e0ff;
+}
+
+footer span {
+    color: #ff007f;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
