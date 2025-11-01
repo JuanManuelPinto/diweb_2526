@@ -11,9 +11,14 @@
     </head>
     <body>
         <header>
-            <h1 class="logo">JM<span>PG</span></h1>
+            <a href="index.html" class="logo" style="text-decoration: none;">JM<span>PG</span></a>
             <nav>
-                <ul>
+                <button class="menu-hamburguesa" id="menuToggle"
+                    aria-label="Abrir menú">
+                    &#9776;
+                </button>
+
+                <ul id="menuLinks">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
                     <li><a href="proyectos.html">Proyectos</a></li>
@@ -60,8 +65,10 @@
         <footer>
             <p>© 2025 Juan Manuel Pinto Garrucho. Todos los derechos
                 reservados.</p>
-            <p>Portfolio 
+            <p>Portfolio
                 <strong>JM<span>PG</span></strong></p>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>

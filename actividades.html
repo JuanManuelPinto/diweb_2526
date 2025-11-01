@@ -13,9 +13,14 @@
 
     <body>
         <header>
-            <h1 class="logo">JM<span>PG</span></h1>
+            <a href="index.html" class="logo" style="text-decoration: none;">JM<span>PG</span></a>
             <nav>
-                <ul>
+                <button class="menu-hamburguesa" id="menuToggle"
+                    aria-label="Abrir menú">
+                    &#9776;
+                </button>
+
+                <ul id="menuLinks">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="actividades.html"
                             class="active">Actividades</a></li>
@@ -26,7 +31,7 @@
         </header>
 
         <main class="contenedor">
-            <h2 class="titulo">🚀 Mis Actividades</h2>
+            <h2 class="titulo">🗂️ Mis Actividades</h2>
 
             <div class="grid-actividades">
                 <div class="actividad-card">
@@ -154,11 +159,23 @@
 
                 <div class="actividad-card">
                     <div class="img-container">
+                        <img src="img/actividades_img/actividad_13.png"
+                            alt="Actividad 13" />
+                    </div>
+                    <h3>Actividad 13: Modelos Web</h3>
+                    <p>Páginas con tamaño fijo, responsive, liquido y adaptativo.</p>
+                    <a href="entradas/entrada13/entrada_actividad_13"
+                        class="btn">Ver Actividad</a>
+                </div>
+
+                <div class="actividad-card">
+                    <div class="img-container">
                         <img src="img/actividades_img/actividad_14.png"
                             alt="Actividad 14" />
                     </div>
                     <h3>Actividad 14: Web Básica HTML</h3>
-                    <p>Creación de web básica cadiz turismo usando etiquetas básicas de HTML5</p>
+                    <p>Creación de web básica cadiz turismo usando etiquetas
+                        básicas de HTML5</p>
                     <a href="entradas/entrada14/entrada_actividad_14"
                         class="btn">Ver Actividad</a>
                 </div>
@@ -172,6 +189,8 @@
                 <strong>JM<span>PG</span></strong>
             </p>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 
 </html>

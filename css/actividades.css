@@ -173,7 +173,6 @@ nav a.active {
 /* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
         gap: 15px;
     }
 
@@ -208,4 +207,104 @@ footer p {
     margin: 0.3rem 0;
     font-size: 0.9rem;
     letter-spacing: 0.05em;
+}
+
+/* --- Estilos del Menú Hamburguesa (Mobile-First) --- */
+
+/* 1. Estilos del botón de hamburguesa */
+.menu-hamburguesa {
+    display: block;
+    /* Visible por defecto (en móvil) */
+    font-size: 1.5rem;
+    /* Tamaño del icono */
+    color: white;
+    /* O el color que uses en tu logo/texto */
+    background: none;
+    border: none;
+    cursor: pointer;
+    order: 1;
+    /* Para moverlo si usas flexbox en el header */
+    margin-left: auto;
+    /* Empuja el icono a la derecha */
+}
+
+/* 2. Ocultar la lista de enlaces POR DEFECTO (en móvil) */
+nav ul#menuLinks {
+    display: none;
+    /* Oculto inicialmente */
+
+    /* Estilos para cuando se muestre (menú desplegado) */
+    position: absolute;
+    /* Se superpone al contenido */
+    top: 70px;
+    /* Ajusta esto según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* Un fondo oscuro (ajusta el color) */
+    flex-direction: column;
+    /* Apila los enlaces verticalmente */
+    padding: 10px 0;
+}
+
+/* 3. Estilos para la clase '.active' que pondrá JavaScript */
+nav ul#menuLinks.active {
+    display: flex;
+    /* Muestra el menú cuando tiene la clase '.active' */
+}
+
+/* 4. Estilos de los enlaces dentro del menú móvil */
+nav ul#menuLinks li {
+    width: 100%;
+    text-align: center;
+    /* Centra el texto */
+    margin: 0;
+}
+
+nav ul#menuLinks li a {
+    display: block;
+    /* Ocupa todo el ancho del 'li' */
+    padding: 15px;
+    width: 100%;
+}
+
+/* --- Media Query para Escritorio --- */
+
+/* Usamos min-width (ej. 768px). Si la pantalla es MÁS GRANDE 
+  que 768px, se aplican estos estilos.
+*/
+@media (min-width: 768px) {
+
+    /* 1. Ocultamos el botón de hamburguesa en escritorio */
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    /* 2. Mostramos el menú de enlaces como estaba antes */
+    nav ul#menuLinks {
+        display: flex;
+        /* Muestra la lista */
+        position: static;
+        /* Quita el posicionamiento absoluto */
+        flex-direction: row;
+        /* Vuelve a la fila horizontal */
+        width: auto;
+        /* Ancho automático */
+        background-color: transparent;
+        /* Sin fondo */
+        padding: 0;
+    }
+
+    /* 3. Reajustamos los 'li' y 'a' al estilo de escritorio */
+    nav ul#menuLinks li {
+        width: auto;
+        margin-left: 15px;
+        /* O el margen que tuvieras */
+    }
+
+    nav ul#menuLinks li a {
+        padding: 0;
+        /* O el padding que tuvieras */
+        width: auto;
+    }
 }

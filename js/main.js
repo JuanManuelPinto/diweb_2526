@@ -16,3 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   escribir();
 });
+
+// Espera a que todo el contenido HTML esté cargado
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Selecciona el botón y el menú por sus IDs
+    const menuToggle = document.getElementById('menuToggle');
+    const menuLinks = document.getElementById('menuLinks');
+
+    // Añade un 'escuchador' de eventos para el 'clic'
+    menuToggle.addEventListener('click', () => {
+        // Cuando se haga clic:
+        // Añade o quita la clase 'active' del menú de enlaces
+        menuLinks.classList.toggle('active');
+    });
+
+});
