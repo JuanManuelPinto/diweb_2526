@@ -1,0 +1,11 @@
+p {
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+/*
+* La ventaja es separar el contenido HTML de los estilos CSS.
+*/
