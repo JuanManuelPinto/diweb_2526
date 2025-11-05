@@ -1,0 +1,21 @@
+p {
+  color: blue;
+}
+
+.importante {
+  background-color: yellow;
+}
+
+#titulo {
+  font-size: 24px;
+  color: darkgreen;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[type="text"] {
+  border: 2px solid red;
+}
