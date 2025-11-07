@@ -1,0 +1,23 @@
+.container  p {
+    color: blue;
+}
+
+.container > h2 {
+    color: red;
+}
+
+h2 + p {
+    color: green;
+}
+
+.intro ~ p {
+    background-color: yellow;
+}
+
+h2, .intro {
+    margin-bottom: 10px;
+}
+
+.container p.intro {
+    background-color: grey;
+}
