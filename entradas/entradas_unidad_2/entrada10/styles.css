@@ -17,3 +17,19 @@ div .texto {
 p {
   color: gray;
 }
+
+/* ------------------------------------------
+Respuestas a las preguntas:
+
+¿Qué color se aplica finalmente al encabezado <h1>?
+Color: naranja
+   Regla ganadora: estilo en línea, porque tiene la mayor prioridad frente a reglas de clase o elemento.
+
+¿Cuál es el color del párrafo con el ID parrafo?
+Color: rojo
+   Regla ganadora: selector de ID (#parrafo), ya que tiene mayor especificidad que la regla general de párrafos (<p>).
+
+¿Qué color tiene el párrafo con la clase texto dentro del div contenedor?
+Color: morado
+   Regla ganadora: regla con !important que tiene prioridad sobre cualquier otra regla, incluso las más específicas.
+------------------------------------------ */
