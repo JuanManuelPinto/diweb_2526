@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadiz Turismo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            padding: 50px;
+            font-size: 18px;
+            min-height: 100vh;
+        }
+
+        .scroll-bg {
+            background-image: url('https://www.cadizturismo.com/storage/app/media/IMAGENES/PLAYAS/La%20Caleta/Playa_de_La_Caleta_Cadiz.jpg');
+            background-size: cover;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .fixed-bg {
+            background-image: url('https://cdn.applievent.com/entertainment/media/news/2023-08-03_115109_8107.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .local-bg {
+            background-image: url('https://andaluciaexclusiva.com/wp-content/uploads/2020/01/portada-cadiz.jpg');
+            background-size: cover;
+            background-attachment: local;
+            background-repeat: no-repeat;
+            color: white;
+            max-height: 400px;
+        }
+
+        .explicacion {
+            background-color: #f4f4f4;
+            padding: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="scroll-bg">
+        <h2>La caleta</h2>
+        <p>
+            La Caleta es una pequeña y emblemática playa ubicada en el casco histórico de Cádiz, conocida por sus aguas
+            tranquilas, sus barcas de pescadores y sus espectaculares atardeceres que pintan el cielo de tonos cálidos
+            frente al mar.
+        </p>
+    </section>
+
+    <section class="fixed-bg">
+        <h2>El Gran Teatro Falla</h2>
+        <p>
+            El Gran Teatro Falla es uno de los edificios más emblemáticos de Cádiz. De estilo neomudéjar y fachada
+            rojiza, acoge cada año el famoso Concurso Oficial de Agrupaciones del Carnaval, convirtiéndose en el corazón
+            cultural y festivo de la ciudad.
+        </p>
+    </section>
+
+    <section class="local-bg">
+        <h2>La Catedral de Cádiz</h2>
+        <p>
+            La Catedral de Cádiz, conocida como la “Santa Cruz sobre el Mar”, destaca por su imponente cúpula dorada y
+            su mezcla de estilos barroco y neoclásico. Situada frente al océano, es uno de los símbolos más reconocibles
+            de la ciudad y ofrece vistas espectaculares desde su torre.
+        </p>
+    </section>
+
+    <div class="explicacion">
+        <h3>Observaciones sobre background-attachment</h3>
+        <p>
+            Al hacer scroll en la página se observa que: <strong>scroll</strong> permite que la imagen de fondo se
+            desplace junto con el contenido; <strong>fixed</strong> mantiene la imagen fija en la ventana del navegador,
+            creando un efecto de paralaje; y <strong>local</strong> hace que la imagen se desplace únicamente dentro del
+            área desplazable de la sección, siempre que esta tenga contenido suficiente para generar scroll interno.
+        </p>
+    </div>
+
+</body>
+
+</html>
