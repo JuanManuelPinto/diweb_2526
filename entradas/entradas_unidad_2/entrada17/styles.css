@@ -1,0 +1,45 @@
+body  {
+    font-family: 'Trebuchet MS';
+}
+
+h1 {
+    color: #333333;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #555555;
+}
+
+p {
+    color: #333333;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-left: 3px solid #007aac;
+}
+
+/* 
+1. ¿Cómo cambia la apariencia del texto cuando aplicas diferentes colores y tamaños?
+
+Cuando aplicas diferentes colores y tamaños, el texto puede verse más llamativo, 
+destacar ciertas partes o volverse más fácil/difícil de leer según la elección.
+
+-------------------
+2. ¿Qué combinación de propiedades y colores te parece más profesional o atractiva?
+
+Una combinación profesional suele ser usar colores neutros (negro, gris, azul oscuro) 
+con un tamaño claro y legible, evitando excesos de colores brillantes o llamativos.
+
+*/
