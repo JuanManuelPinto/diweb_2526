@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+.parrafo1 {
+    text-transform: capitalize;
+}
+
+.parrafo2 {
+    letter-spacing: 2px;
+}
+
+.parrafo3 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 1.8;
+}
