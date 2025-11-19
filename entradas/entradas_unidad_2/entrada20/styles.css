@@ -10,3 +10,8 @@ ul.materiales {
     color: #2a7a1f;
 }
 
+ul.recursos {
+    list-style-image: url('https://media.giphy.com/media/tBik70kZOJKOk/giphy.gif');
+    list-style-position: inside;
+    color: #444444;
+}

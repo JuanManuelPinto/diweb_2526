@@ -1,0 +1,25 @@
+body {
+    background-color: brown;
+}
+
+.primera-seccion {
+    padding: 10px;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+.segunda-seccion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    background-color: aquamarine;
+}
+
+.boton {
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: blueviolet;
+}
