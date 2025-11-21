@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rescata el Contenido Centrado</title>
+    <style>
+      body {
+        background-color: #f0f4f8;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* 💡 ¡MODIFICA AQUÍ! 💡 */
+      .contenedor {
+        /* Tienen que usar width, max-width, min-width y margin: auto */
+
+        margin: auto;
+        width: 90%;
+        max-width: 900px;
+        min-width: 300px;
+
+        border: 2px solid #007bff;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .caja-imagen {
+        /* Tienen que usar height */
+        background-color: #ff9900;
+      }
+
+      p {
+        font-size: 1.1em;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Contenido Responsivo y Centrado</h2>
+      <div class="caja-imagen">
+        **BOX DE IMAGEN (Debe medir 200px de alto)**
+      </div>
+      <p>
+        Este texto debe ser fácil de leer en cualquier pantalla. Si la pantalla
+        es gigante, el contenedor no debe estirarse más allá de 900px. Si la
+        pantalla es muy pequeña (como un móvil antiguo), el contenedor debe
+        tener un ancho de **mínimo** 300px. ¡Y lo más importante, todo el
+        contenedor debe estar centrado!
+      </p>
+    </div>
+  </body>
+</html>

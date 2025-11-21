@@ -1,0 +1,48 @@
+/* Estilos comunes para ambas cajas */
+.caja-base {
+  width: 200px; /* Ancho fijo deseado */
+  height: 100px; /* Alto fijo deseado */
+  padding: 20px; /* Relleno */
+  border: 10px solid #ef4444; /* Borde rojo */
+  margin: 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #1f2937;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modelo de Caja Estándar (Por defecto) */
+.caja-content-box {
+  /* box-sizing: content-box; es el valor por defecto, pero lo definimos para claridad */
+  box-sizing: content-box;
+  background-color: #fca5a5; /* Rojo claro */
+  /* SOLUCIÓN:
+     Para obtener 200px totales en content-box:
+     200 (total) - 40 (padding) - 20 (border) = 140px
+  */
+  width: 140px;
+}
+
+/* Modelo de Caja Alternativo (Recomendado) */
+.caja-border-box {
+  box-sizing: border-box;
+  background-color: #a7f3d0; /* Verde claro */
+  border-color: #059669; /* Borde verde */
+
+  width: 200px;
+}
+
+h1 {
+  font-size: 1.875rem; /* text-3xl en Tailwind */
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+body {
+     background-color: aquamarine;
+     text-align: center;
+}
+
+.primera_seccion {
+     margin: 10px;
+     width: 200px;
+     height: 150px;
+     background-color: aqua;
+     border: 1px solid red;
+}
+
+.segunda_seccion {
+     margin: 10px;
+     width: 50%;
+     height: 100px;
+     background-color: lightcoral;
+     border: 1px solid yellow;
+}
+
+.tercera_seccion {
+     margin: 10px;
+     width: 300px;
+     min-height: 100px;
+     max-height: 200px;
+     background-color: azure;
+     border: 1px solid black; 
+}

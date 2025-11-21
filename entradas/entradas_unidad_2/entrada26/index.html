@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico: Box-Sizing</title>
+    <!-- Incluyendo Tailwind CSS para estilos de base -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+
+    <div class="container mx-auto p-4">
+        <h1>Comparación de Modelos de Caja con Ancho = 200px</h1>
+
+        <!-- CAJA 1: content-box -->
+        <div class="caja-base caja-content-box">
+            <p>CONTENT-BOX (Default)</p>
+            <p class="mt-2 text-sm font-normal text-gray-700">Anchura total: 260px</p>
+        </div>
+
+        <!-- CAJA 2: border-box -->
+        <div class="caja-base caja-border-box">
+            <p>BORDER-BOX (Recomendado)</p>
+            <p class="mt-2 text-sm font-normal text-gray-700">Anchura total: 200px</p>
+        </div>
+
+        <div class="mt-10 p-6 bg-white rounded-lg shadow-lg w-full max-w-2xl mx-auto">
+            <h2 class="text-xl font-bold mb-4 text-gray-800">Cálculos</h2>
+            
+            <p class="text-lg font-semibold mb-2 text-red-600">Caja 1: content-box (Anchura)</p>
+            <p class="font-mono bg-gray-50 p-2 rounded">
+                200px (width) + 20px (left-padding) + 20px (right-padding) + 10px (left-border) + 10px (right-border) = 
+                <strong class="text-red-600">260px</strong>
+            </p>
+
+            <p class="text-lg font-semibold mt-6 mb-2 text-green-700">Caja 2: border-box (Anchura)</p>
+            <p class="font-mono bg-gray-50 p-2 rounded">
+                200px (width) = <strong class="text-green-700">200px</strong>
+                <span class="text-sm italic block mt-1">(El padding y el border se "comen" el espacio del contenido.)</span>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

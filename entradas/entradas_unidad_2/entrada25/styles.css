@@ -1,0 +1,12 @@
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor_texto {
+     background-color: grey;
+     width: 300px;
+     height: 300px;
+     border: 15px solid green;
+     padding: 50px;
+     margin: 20px;
+}
