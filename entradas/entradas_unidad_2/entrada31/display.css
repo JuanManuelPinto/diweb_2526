@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h2, h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bloque {
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.en-linea {
+    background-color: lightgreen;
+    padding: 5px;
+    display: inline;
+}
+
+.inline-block {
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.oculto {
+    display: none;
+}
+
+.visibleBox {
+    background-color: gold;
+    padding: 15px;
+    margin-top: 15px;
+    visibility: visible;
+}

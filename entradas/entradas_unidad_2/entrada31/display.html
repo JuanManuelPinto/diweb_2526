@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Display y Visibility en CSS</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+
+<body>
+
+    <h1>Propiedades Display y Visibility en CSS</h1>
+
+    <p class="explicacion">
+        <strong>display</strong> controla si el elemento se muestra y cómo ocupa espacio.
+        <strong>visibility</strong> controla si el elemento es visible, pero mantiene su espacio reservado.
+    </p>
+
+    <h2>Ejemplos de distintos elementos</h2>
+
+    <div class="bloque">Div con display: block</div>
+
+    <span class="en-linea">Elemento inline 1</span>
+    <span class="en-linea">Elemento inline 2</span>
+    <span class="en-linea">Elemento inline 3</span>
+
+    <p class="inline-block">Párrafo con display: inline-block</p>
+    <button class="inline-block">Botón con inline-block</button>
+
+    <!-- Elemento oculto con display -->
+    <div id="oculto" class="oculto">
+        Elemento oculto con display: none
+    </div>
+    <button id="mostrarBtn">Mostrar elemento oculto</button>
+
+    <!-- Nuevo elemento para visibility -->
+    <div id="visibleBox" class="visibleBox">
+        Elemento con visibility: visible/hidden
+    </div>
+    <button id="visibilityBtn">Ocultar con visibility</button>
+
+    <script>
+        const boton = document.getElementById("mostrarBtn");
+        const oculto = document.getElementById("oculto");
+
+        boton.addEventListener("click", () => {
+            if (oculto.style.display === "none" || oculto.classList.contains("oculto")) {
+                oculto.style.display = "block";
+                oculto.classList.remove("oculto");
+                boton.textContent = "Ocultar elemento";
+            } else {
+                oculto.style.display = "none";
+                boton.textContent = "Mostrar elemento oculto";
+            }
+        });
+
+        // Nuevo botón para visibility
+        const visibilityBtn = document.getElementById("visibilityBtn");
+        const visibleBox = document.getElementById("visibleBox");
+
+        visibilityBtn.addEventListener("click", () => {
+            if (visibleBox.style.visibility === "hidden") {
+                visibleBox.style.visibility = "visible";
+                visibilityBtn.textContent = "Ocultar con visibility";
+            } else {
+                visibleBox.style.visibility = "hidden";
+                visibilityBtn.textContent = "Mostrar con visibility";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

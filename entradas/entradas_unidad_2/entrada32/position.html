@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ejemplo de Position en CSS</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<body>
+    <h1>Ejemplo de posiciones en CSS</h1>
+    <p>Desplázate hacia abajo para ver cómo funcionan los diferentes tipos de <strong>position</strong> en CSS.</p>
+
+    <div class="contenedor">
+        <div class="caja static">
+            <h2>Position: static</h2>
+            <p>Este es el comportamiento por defecto. El elemento se coloca en el flujo normal del documento.</p>
+        </div>
+
+        <div class="caja relative">
+            <h2>Position: relative</h2>
+            <p>Este elemento se ha desplazado 30px hacia la derecha y 20px hacia abajo desde su posición original.</p>
+        </div>
+
+        <div class="caja absolute">
+            <h2>Position: absolute</h2>
+            <p>Este elemento está posicionado respecto al contenedor principal.</p>
+        </div>
+    </div>
+
+    <div class="caja sticky">
+        <h2>Position: sticky</h2>
+        <p>Este elemento se mantiene anclado en la parte superior cuando haces scroll.</p>
+    </div>
+
+    <div class="caja fixed">
+        <h2>Position: fixed</h2>
+        <p>Este elemento permanece fijo en la esquina inferior derecha de la ventana.</p>
+    </div>
+
+    <p style="margin-top:1000px;">Fin del contenido para probar el scroll.</p>
+</body>
+
+</html>
