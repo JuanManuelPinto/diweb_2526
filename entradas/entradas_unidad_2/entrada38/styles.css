@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:link {
+    background-color: #3498db; 
+    color: white;
+}
+
+.boton:visited {
+    background-color: #9b59b6;
+    color: #ffffff;
+}
+
+.boton:hover {
+    background-color: #2ecc71;
+    color: black;
+    cursor: pointer;
+}
+
+.boton:active {
+    background-color: #f1c40f;
+    color: black;
+}
