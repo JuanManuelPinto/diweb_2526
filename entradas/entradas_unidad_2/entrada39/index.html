@@ -14,21 +14,25 @@
             font-weight: bold;
         }
 
-        .tareas li:nth-child(3) {
+        .tareas :nth-child(3) {
             color: blue;
             font-style: italic;
             text-transform: uppercase;
         }
 
-        .tareas li:nth-child(3)+li {
+        .tareas :nth-child(3)+li {
+            color: red;
+        }
+        
+        .tareas :nth-child(1)+li {
             color: red;
         }
 
-        .tareas li:nth-child(3)~li {
+        .tareas :nth-child(3)~li {
             text-decoration: line-through;
         }
 
-        .contactos li:nth-child(2) {
+        .contactos :nth-child(2) {
             border: 2px solid red;
         }
     </style>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos en CSS</title>
+    <style>
+        /* Primera línea de cada párrafo */
+        p::first-line {
+            color: blue;
+            font-size: 1.2em;
+        }
+
+        /* Primera letra de cada párrafo */
+        p::first-letter {
+            color: red;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Mensaje antes del documento */
+        body::before {
+            content: "¡Prepárate para aprender CSS!";
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4a90e2;
+            margin-bottom: 50px;
+        }
+
+        /* Mensaje después del documento */
+        body::after {
+            content: "¡Sigue practicando y mejora cada día!";
+            display: block;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e26a4a;
+            margin-top: 50px;
+        }
+
+        /* Estilo para la selección de texto */
+        body::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenidos al Mundo de CSS</h1>
+    <p>
+        El CSS es un lenguaje de diseño gráfico utilizado para personalizar la presentación visual de los documentos
+        web.
+        Este documento está escrito para que practiques con pseudo-elementos y mejores tus habilidades.
+    </p>
+    <p>
+        Aprende, experimenta y diviértete mientras exploras las infinitas posibilidades de diseño que ofrece el CSS.
+        ¡Manos a la obra!
+    </p>
+</body>
+
+</html>
