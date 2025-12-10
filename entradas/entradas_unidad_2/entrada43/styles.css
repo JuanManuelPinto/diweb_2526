@@ -1,0 +1,19 @@
+body {
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+}
+
+img {
+    border: 2px solid black;
+    width: 300px;
+}

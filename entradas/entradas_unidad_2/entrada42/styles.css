@@ -1,0 +1,26 @@
+@media all {
+    p {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    img {
+        display: block;
+        margin-left: 0;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media screen {
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
