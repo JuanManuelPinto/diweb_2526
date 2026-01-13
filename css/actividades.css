@@ -315,37 +315,45 @@ nav ul#menuLinks li a {
 .titulo-tema {
     font-size: 1.8em;
     color: #fff;
-    margin: 40px 0 30px; /* Margen para separarlo del título principal y de las cards */
+    margin: 40px 0 30px;
+    /* Margen para separarlo del título principal y de las cards */
     text-align: center;
-    border-bottom: 2px solid rgba(0, 255, 255, 0.2); /* Línea sutil */
+    border-bottom: 2px solid rgba(0, 255, 255, 0.2);
+    /* Línea sutil */
     padding-bottom: 10px;
     letter-spacing: 1px;
 }
 
 /* 1. Añade un espacio después de cada bloque-tema */
 .bloque-tema {
-    margin-bottom: 80px; /* Espacio grande para el separador */
+    margin-bottom: 80px;
+    /* Espacio grande para el separador */
 }
 
 /* 2. Oculta el margen del ÚLTIMO bloque para que no haya separación al final */
-.contenedor > .bloque-tema:last-of-type {
+.contenedor>.bloque-tema:last-of-type {
     margin-bottom: 0;
 }
 
 /* 3. Crea el separador visual (línea con brillo) */
 .bloque-tema:not(:last-of-type)::after {
-    content: ""; /* Esencial para pseudoelementos */
+    content: "";
+    /* Esencial para pseudoelementos */
     display: block;
-    width: 60%; /* Ancho de la línea (ajusta a tu gusto) */
+    width: 60%;
+    /* Ancho de la línea (ajusta a tu gusto) */
     max-width: 800px;
-    height: 3px; /* Grosor de la línea */
-    background: #00ffff; /* Color principal (cian) */
-    margin: 40px auto 0; /* Centra la línea y ajusta el espacio */
+    height: 3px;
+    /* Grosor de la línea */
+    background: #00ffff;
+    /* Color principal (cian) */
+    margin: 40px auto 0;
+    /* Centra la línea y ajusta el espacio */
     border-radius: 5px;
 
     /* Estilo futurista con sombra de caja (el brillo) */
     box-shadow: 0 0 15px #00ffff, 0 0 30px rgba(0, 255, 255, 0.5);
-    
+
     /* Pequeña animación para que no sea estático */
     animation: pulse 2s infinite alternate;
 }
@@ -355,6 +363,7 @@ nav ul#menuLinks li a {
     from {
         opacity: 0.5;
     }
+
     to {
         opacity: 1;
         box-shadow: 0 0 20px #00ffff, 0 0 40px rgba(0, 255, 255, 0.7);

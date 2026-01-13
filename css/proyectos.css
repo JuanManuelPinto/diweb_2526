@@ -74,11 +74,15 @@ nav a.active {
     display: grid;
     /* Adjusted to create more compact cards, allowing up to 3 columns on larger screens */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px; /* Reduced gap slightly for compactness */
+    gap: 30px;
+    /* Reduced gap slightly for compactness */
     justify-content: center;
-    align-items: start; /* Align items to the start so they don't stretch */
-    max-width: 1200px; /* Max width for the grid to keep content centered */
-    margin: 0 auto; /* Center the grid */
+    align-items: start;
+    /* Align items to the start so they don't stretch */
+    max-width: 1200px;
+    /* Max width for the grid to keep content centered */
+    margin: 0 auto;
+    /* Center the grid */
 }
 
 /* ---- CARD ---- */
@@ -87,15 +91,22 @@ nav a.active {
     border: 1px solid rgba(0, 255, 255, 0.3);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-    padding: 20px; /* Slightly reduced padding */
+    padding: 20px;
+    /* Slightly reduced padding */
     transition: transform 0.3s ease, box-shadow 0.4s ease;
     animation: fadeInUp 1.2s ease both;
-    display: flex; /* Use flexbox for internal layout */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Push button to the bottom */
-    height: auto; /* Allow height to adjust based on content */
-    max-width: 350px; /* Max width for individual cards */
-    margin: 0 auto; /* Center cards within their grid cell */
+    display: flex;
+    /* Use flexbox for internal layout */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: space-between;
+    /* Push button to the bottom */
+    height: auto;
+    /* Allow height to adjust based on content */
+    max-width: 350px;
+    /* Max width for individual cards */
+    margin: 0 auto;
+    /* Center cards within their grid cell */
 }
 
 .actividad-card:hover {
@@ -107,15 +118,19 @@ nav a.active {
 .img-container {
     overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 15px; /* Slightly reduced margin */
+    margin-bottom: 15px;
+    /* Slightly reduced margin */
     border: 2px solid rgba(0, 255, 255, 0.4);
-    aspect-ratio: 16/9; /* Maintain a consistent aspect ratio for images */
-    width: 100%; /* Ensure image container fills card width */
+    aspect-ratio: 16/9;
+    /* Maintain a consistent aspect ratio for images */
+    width: 100%;
+    /* Ensure image container fills card width */
 }
 
 .img-container img {
     width: 100%;
-    height: 100%; /* Make image fill the container */
+    height: 100%;
+    /* Make image fill the container */
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -127,29 +142,37 @@ nav a.active {
 /* Títulos y texto */
 .actividad-card h3 {
     color: #00ffff;
-    margin-bottom: 8px; /* Slightly reduced margin */
-    font-size: 1.2em; /* Slightly smaller font size */
+    margin-bottom: 8px;
+    /* Slightly reduced margin */
+    font-size: 1.2em;
+    /* Slightly smaller font size */
 }
 
 .actividad-card p {
     color: #d0d0d0;
-    font-size: 0.9em; /* Slightly smaller font size */
-    line-height: 1.5em; /* Adjusted line height */
-    margin-bottom: 15px; /* Slightly reduced margin */
-    flex-grow: 1; /* Allow paragraph to grow and take available space */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+    line-height: 1.5em;
+    /* Adjusted line height */
+    margin-bottom: 15px;
+    /* Slightly reduced margin */
+    flex-grow: 1;
+    /* Allow paragraph to grow and take available space */
 }
 
 /* Botón */
 .btn {
     display: inline-block;
-    padding: 9px 22px; /* Slightly adjusted padding */
+    padding: 9px 22px;
+    /* Slightly adjusted padding */
     color: #00ffff;
     border: 2px solid #00ffff;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    margin-top: auto; /* Push button to the bottom */
+    margin-top: auto;
+    /* Push button to the bottom */
 }
 
 .btn:hover {
@@ -190,7 +213,8 @@ nav a.active {
     }
 
     nav ul {
-        flex-wrap: wrap; /* Allow navigation items to wrap */
+        flex-wrap: wrap;
+        /* Allow navigation items to wrap */
         justify-content: center;
     }
 
@@ -200,13 +224,16 @@ nav a.active {
     }
 
     .grid-actividades {
-        grid-template-columns: 1fr; /* Single column on small screens */
-        padding: 0 20px; /* Add padding to grid on small screens */
+        grid-template-columns: 1fr;
+        /* Single column on small screens */
+        padding: 0 20px;
+        /* Add padding to grid on small screens */
     }
 
     .actividad-card {
         padding: 20px;
-        max-width: 100%; /* Allow cards to take full width on small screens */
+        max-width: 100%;
+        /* Allow cards to take full width on small screens */
     }
 
     .btn {
@@ -243,44 +270,57 @@ footer p {
 
 /* 1. Estilos del botón de hamburguesa */
 .menu-hamburguesa {
-    display: block; /* Visible por defecto (en móvil) */
-    font-size: 1.5rem; /* Tamaño del icono */
-    color: white; /* O el color que uses en tu logo/texto */
+    display: block;
+    /* Visible por defecto (en móvil) */
+    font-size: 1.5rem;
+    /* Tamaño del icono */
+    color: white;
+    /* O el color que uses en tu logo/texto */
     background: none;
     border: none;
     cursor: pointer;
-    order: 1; /* Para moverlo si usas flexbox en el header */
-    margin-left: auto; /* Empuja el icono a la derecha */
+    order: 1;
+    /* Para moverlo si usas flexbox en el header */
+    margin-left: auto;
+    /* Empuja el icono a la derecha */
 }
 
 /* 2. Ocultar la lista de enlaces POR DEFECTO (en móvil) */
 nav ul#menuLinks {
-    display: none; /* Oculto inicialmente */
-    
+    display: none;
+    /* Oculto inicialmente */
+
     /* Estilos para cuando se muestre (menú desplegado) */
-    position: absolute; /* Se superpone al contenido */
-    top: 70px; /* Ajusta esto según la altura de tu header */
+    position: absolute;
+    /* Se superpone al contenido */
+    top: 70px;
+    /* Ajusta esto según la altura de tu header */
     left: 0;
     width: 100%;
-    background-color: #333; /* Un fondo oscuro (ajusta el color) */
-    flex-direction: column; /* Apila los enlaces verticalmente */
+    background-color: #333;
+    /* Un fondo oscuro (ajusta el color) */
+    flex-direction: column;
+    /* Apila los enlaces verticalmente */
     padding: 10px 0;
 }
 
 /* 3. Estilos para la clase '.active' que pondrá JavaScript */
 nav ul#menuLinks.active {
-    display: flex; /* Muestra el menú cuando tiene la clase '.active' */
+    display: flex;
+    /* Muestra el menú cuando tiene la clase '.active' */
 }
 
 /* 4. Estilos de los enlaces dentro del menú móvil */
 nav ul#menuLinks li {
     width: 100%;
-    text-align: center; /* Centra el texto */
+    text-align: center;
+    /* Centra el texto */
     margin: 0;
 }
 
 nav ul#menuLinks li a {
-    display: block; /* Ocupa todo el ancho del 'li' */
+    display: block;
+    /* Ocupa todo el ancho del 'li' */
     padding: 15px;
     width: 100%;
 }
@@ -291,7 +331,7 @@ nav ul#menuLinks li a {
   que 768px, se aplican estos estilos.
 */
 @media (min-width: 768px) {
-    
+
     /* 1. Ocultamos el botón de hamburguesa en escritorio */
     .menu-hamburguesa {
         display: none;
@@ -299,22 +339,29 @@ nav ul#menuLinks li a {
 
     /* 2. Mostramos el menú de enlaces como estaba antes */
     nav ul#menuLinks {
-        display: flex; /* Muestra la lista */
-        position: static; /* Quita el posicionamiento absoluto */
-        flex-direction: row; /* Vuelve a la fila horizontal */
-        width: auto; /* Ancho automático */
-        background-color: transparent; /* Sin fondo */
+        display: flex;
+        /* Muestra la lista */
+        position: static;
+        /* Quita el posicionamiento absoluto */
+        flex-direction: row;
+        /* Vuelve a la fila horizontal */
+        width: auto;
+        /* Ancho automático */
+        background-color: transparent;
+        /* Sin fondo */
         padding: 0;
     }
 
     /* 3. Reajustamos los 'li' y 'a' al estilo de escritorio */
     nav ul#menuLinks li {
         width: auto;
-        margin-left: 15px; /* O el margen que tuvieras */
+        margin-left: 15px;
+        /* O el margen que tuvieras */
     }
 
     nav ul#menuLinks li a {
-        padding: 0; /* O el padding que tuvieras */
+        padding: 0;
+        /* O el padding que tuvieras */
         width: auto;
     }
 }
