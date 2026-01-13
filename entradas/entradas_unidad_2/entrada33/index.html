@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Z-Index</title>
+    <style>
+        .cuadrado {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .uno {
+            background-color: red;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .dos {
+            background-color: blue;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+
+        .tres {
+            background-color: green;
+            top: 140px;
+            left: 140px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cuadrado uno">1</div>
+    <div class="cuadrado dos">2</div>
+    <div class="cuadrado tres">3</div>
+
+</body>
+</html>
