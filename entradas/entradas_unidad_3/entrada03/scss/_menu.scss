@@ -1,0 +1,24 @@
+.menu {
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    a {
+        color: $color-principal;
+        font-family: $font-family;
+        font-size: $font-size-menu;
+        text-decoration: none;
+        padding: 10px;
+
+        &:hover {
+            background-color: $color-secundario;
+            color: $color-blanco;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style: none;
+}
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+.menu a {
+  color: #333;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+}
+.menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: black;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.content h2 {
+  margin-top: 30px;
+}/*# sourceMappingURL=main.css.map */
