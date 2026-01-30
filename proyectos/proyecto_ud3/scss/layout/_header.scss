@@ -1,0 +1,57 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+.main-header {
+    background-color: $color-primary;
+    padding: $spacing-md;
+    @include flex-center;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+
+        h1 {
+            font-size: px-to-rem(48); 
+            color: $color-secondary;
+            font-weight: 700;
+        }
+
+        .logo-img {
+            width: 50px; 
+        }
+    }
+}
+
+// barra de navegación NEGRA
+.main-nav {
+    background-color: black; 
+    color: $color-primary; 
+
+    ul {
+        @include flex-center;
+        list-style: none;
+        
+        @include mobile {
+            flex-direction: column;
+        }
+
+        li {
+            padding: $spacing-md $spacing-lg;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-size: px-to-rem(14);
+            color: $color-primary; 
+            
+            &:hover {
+                color: white; 
+            }
+
+            &::after {
+                content: ' ▼';
+                font-size: 0.7em;
+                color: $color-primary;
+            }
+        }
+    }
+}

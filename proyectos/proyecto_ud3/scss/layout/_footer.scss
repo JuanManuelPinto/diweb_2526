@@ -1,0 +1,19 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+.main-footer {
+    background-color: #aae073;
+    padding: $spacing-lg;
+    @include flex-center;
+    margin-top: auto; 
+
+    p {
+        font-weight: bold;
+        font-size: px-to-rem(18);
+        
+        &::before {
+            content: '© ';
+            margin-right: 5px;
+        }
+    }
+}

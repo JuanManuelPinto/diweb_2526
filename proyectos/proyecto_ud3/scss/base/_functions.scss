@@ -1,0 +1,7 @@
+@use '../base/variables';
+@use 'sass:math';
+
+@function px-to-rem($pixels) {
+  // En lugar de ($pixels / 16), usamos math.div
+  @return math.div($pixels, 16) * 1rem;
+}

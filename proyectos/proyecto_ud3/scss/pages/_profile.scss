@@ -1,0 +1,191 @@
+@use '../base/variables';
+@use '../utils/mixins';
+
+.profile-main {
+    padding: $spacing-lg;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    gap: $spacing-lg;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+%card-style {
+    background-color: #aae073;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: $spacing-md;
+}
+
+%card-header {
+    background-color: darken(#aae073, 10%);
+    padding: $spacing-md;
+    text-align: center;
+    
+    h3 {
+        margin: 0;
+        font-size: px-to-rem(20);
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.info-card {
+    @extend %card-style;
+
+    .card-header {
+        @extend %card-header;
+    }
+
+    .card-body {
+        padding: $spacing-md;
+    }
+}
+
+.profile-left {
+    .order-item {
+        display: flex;
+        align-items: center;
+        gap: $spacing-md;
+        margin-bottom: $spacing-md;
+        background-color: rgba(255,255,255, 0.15);
+        padding: $spacing-sm;
+        border-radius: 5px;
+
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+    .tracking-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+        margin-top: $spacing-sm;
+    }
+}
+
+.profile-right {
+    .profile-card-big {
+        height: 100%;
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: $spacing-lg;
+
+            .username {
+                font-size: px-to-rem(32);
+                margin-bottom: $spacing-lg;
+                font-weight: 400;
+            }
+
+            .profile-pic-wrapper {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: $spacing-lg;
+                border: 5px solid rgba(255,255,255,0.3);
+
+                .profile-pic {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .user-data {
+                width: 100%;
+                padding: 0 $spacing-md;
+
+                .data-row {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $spacing-md;
+                    font-size: px-to-rem(16);
+
+                    .label {
+                        font-weight: 800;
+                    }
+                    
+                    .value {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-data-form {
+    width: 100%;
+    padding: 0 $spacing-md;
+
+    .data-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $spacing-md;
+
+        label {
+            font-weight: 800;
+            font-size: px-to-rem(16);
+            cursor: pointer;
+        }
+
+        input {
+            width: 65%;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.4); 
+            text-align: right;
+            font-family: inherit;
+            font-size: px-to-rem(16);
+            color: #333;
+            transition: all 0.3s ease;
+
+            &:focus {
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.9);
+                box-shadow: 0 0 0 2px black;
+            }
+        }
+    }
+
+    .btn-save {
+        display: block;
+        width: 100%;
+        margin-top: $spacing-lg;
+        padding: $spacing-md;
+        background-color: black;
+        color: $color-primary;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.02);
+            background-color: #333;
+        }
+    }
+}

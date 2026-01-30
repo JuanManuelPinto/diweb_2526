@@ -1,0 +1,16 @@
+@use '../base/variables';
+
+.section-title {
+    background-color: #aae073;
+    text-align: center;
+    padding: $spacing-sm;
+    margin: $spacing-lg 0;
+    border-radius: 4px;
+
+    h2 {
+        color: $color-secondary;
+        font-size: px-to-rem(24);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
