@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.cabecera {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.cabecera nav a {
+    color: #0066cc;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.cabecera nav a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+.contenedor {
+    position: relative;
+    margin: 40px;
+    border: 2px dashed #ccc;
+}
+
+.caja {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 20px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.especial {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffd966;
+    color: #000;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
