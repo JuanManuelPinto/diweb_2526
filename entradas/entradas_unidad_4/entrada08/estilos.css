@@ -1,0 +1,38 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 80px 1fr 60px;
+  height: 100vh;
+  gap: 10px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  background: #b3cde0;
+}
+
+.menu {
+  color: #fff;
+  grid-row: 2 / 3;
+  background: #6497b1;
+}
+
+.contenido {
+  color: #fff;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background: #005b96;
+}
+
+.extra {
+  color: #fff;
+
+  grid-row: 2 / 3;
+  background: #03396c;
+}
+
+.footer {
+  color: #fff;
+  grid-column: 1 / 4;
+  background: #011f4b;
+}
