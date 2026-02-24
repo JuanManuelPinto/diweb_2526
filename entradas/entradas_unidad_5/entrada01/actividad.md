@@ -1,0 +1,12 @@
+| Característica            | Mapa de Bits (Raster)                                                                | Vectorial                                                                           |
+| ------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Definición                | Imagen compuesta por píxeles organizados en una cuadrícula.                          | Imagen formada por líneas, curvas y formas definidas mediante fórmulas matemáticas. |
+| Escalabilidad             | Pierde calidad al ampliarse (se pixela).                                             | Se puede escalar sin perder calidad.                                                |
+| Tamaño del archivo        | Generalmente mayor, depende de la resolución y profundidad de color.                 | Generalmente menor, depende de la complejidad de los objetos.                       |
+| Formatos comunes          | JPEG, PNG, GIF, BMP, TIFF, PSD                                                       | SVG, AI, EPS, PDF                                                                   |
+| Usos principales          | Fotografía, imágenes digitales detalladas, gráficos con muchos colores y degradados. | Logotipos, ilustraciones, tipografías, gráficos escalables.                         |
+| Edición                   | Se edita a nivel de píxel; puede perder calidad tras múltiples ediciones.            | Se edita por objetos independientes; no pierde calidad al modificarse.              |
+| Compatibilidad con la web | Alta compatibilidad (JPEG, PNG y GIF son estándares web).                            | Alta compatibilidad (SVG es estándar web moderno).                                  |
+| Rendimiento               | Puede ser más pesado al cargar si tiene alta resolución.                             | Generalmente más ligero y rápido en gráficos simples.                               |
+| Calidad del color         | Excelente para representar variaciones complejas y degradados de color.              | Buena, pero menos adecuada para detalles fotográficos complejos.                    |
+| Captura de ejemplo        | Fotografía digital o imagen escaneada.                                               | Logotipo o ilustración creada en software de diseño vectorial.                      |
