@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["estilos.scss"],"names":[],"mappings":"AAQA;EACI,aANU;EAOV,OARS;EAST;;;AAGJ;EACI,kBAfY;EAgBZ,OAVS;EAWT,SAbM;;;AAgBV;EACI;EACA,SAlBM;EAmBN,eAnBM;EAoBN,kBAlBS;;;AAqBb;EACI,kBA3Bc;EA4Bd,OAvBS;EAwBT,SA1BM;EA2BN","file":"estilos.css"}
+{"version":3,"sources":["estilos.scss","estilos.css"],"names":[],"mappings":"AAQA;EACI,gCANU;EAOV,WARS;EAST,SAAA;ACPJ;;ADUA;EACI,yBAfY;EAgBZ,YAVS;EAWT,aAbM;ACMV;;ADUA;EACI,yBAAA;EACA,aAlBM;EAmBN,mBAnBM;EAoBN,uBAlBS;ACWb;;ADUA;EACI,yBA3Bc;EA4Bd,YAvBS;EAwBT,aA1BM;EA2BN,YAAA;ACPJ","file":"estilos.css"}

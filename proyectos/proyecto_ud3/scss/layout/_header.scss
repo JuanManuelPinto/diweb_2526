@@ -12,26 +12,26 @@
         gap: $spacing-sm;
 
         h1 {
-            font-size: px-to-rem(48); 
+            font-size: px-to-rem(48);
             color: $color-secondary;
             font-weight: 700;
         }
 
         .logo-img {
-            width: 50px; 
+            width: 50px;
         }
     }
 }
 
 // barra de navegación NEGRA
 .main-nav {
-    background-color: black; 
-    color: $color-primary; 
+    background-color: black;
+    color: $color-primary;
 
     ul {
         @include flex-center;
         list-style: none;
-        
+
         @include mobile {
             flex-direction: column;
         }
@@ -41,10 +41,12 @@
             cursor: pointer;
             text-transform: capitalize;
             font-size: px-to-rem(14);
-            color: $color-primary; 
-            
+            color: $color-primary;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
             &:hover {
-                color: white; 
+                color: white;
+                transform: scale(1.05);
             }
 
             &::after {

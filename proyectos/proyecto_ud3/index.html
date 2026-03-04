@@ -1,22 +1,50 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La 10 Store</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .video-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
+
 <body>
 
-<header class="main-header">
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="img/Logo.png" alt="Logo" class="logo-img">
-        </a>
-        <h1>La 10 Store</h1>
-    </div>
-</header>
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="img/Logo.png" alt="Logo" class="logo-img">
+            </a>
+            <h1>La 10 Store</h1>
+        </div>
+    </header>
 
     <nav class="main-nav">
         <ul>
@@ -41,11 +69,31 @@
         <section class="featured-image">
             <img src="img/ImagenBetis.png" alt="Jugadores Betis">
         </section>
+
+        <div class="section-title">
+            <h2>Vídeo Destacado</h2>
+        </div>
+
+        <section class="video-section">
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/vK7465WIr3s?si=7HWtNNGaSsYvmft-" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
 
-    <footer class="main-footer">
-        <p>La 10 Store</p>
+<footer class="main-footer">
+        <div class="footer-content">
+            <a href="https://example.com">Lo 10 Store</a> © 2026 by <a href="https://example.com">Primos Pinto y Alex</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            <p class="footer-credits">
+                Contenido bajo licencia 
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+            </p>
+            <p><small>Imágenes de archivo obtenidas legalmente para fines demostrativos.</small></p>
+        </div>
     </footer>
 
 </body>
+
 </html>
