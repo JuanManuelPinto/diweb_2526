@@ -2,22 +2,100 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Ejercicios Animaciones</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller de Animaciones CSS - Full Width</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      section {
+        padding: 60px 20px;
+        text-align: center;
+        min-height: 250px;
+      }
+
+      h2 {
+        color: #334155;
+        margin-bottom: 40px;
+      }
+
+      @keyframes moverP {
+        0% {
+          left: 0;
+          color: black;
+          font-size: 20px;
+        }
+        100% {
+          left: calc(100vw - 100px);
+          color: #ef4444;
+          font-size: 120px;
+        }
+      }
+
+      .letra-p {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        animation: moverP 4s linear 1s 4 alternate forwards;
+      }
+
+      .contenedor-p {
+        height: 150px;
+        position: relative;
+        width: 100%;
+      }
+
+      .link-transition {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #6366f1;
+        text-decoration: none;
+        transition: all 0.6s linear;
+      }
+
+      .link-transition:hover {
+        color: #10b981;
+        transform: scale(2) rotate(180deg);
+      }
+
+      .circulo {
+        width: 100px;
+        height: 100px;
+        background-color: #f59e0b;
+        border-radius: 50%;
+        margin: 0 auto;
+        transition: background-color 2s steps(4);
+      }
+
+      .circulo:hover {
+        background-color: #3b82f6;
+      }
+    </style>
   </head>
   <body>
-    <!-- EJERCICIO 1 -->
-    <section>
-      <h1><span class="letra">p</span></h1>
+    <section id="ej1">
+      <h2>Ejercicio 1: Movimiento Horizontal</h2>
+      <div class="contenedor-p">
+        <h1 class="letra-p">p</h1>
+      </div>
     </section>
 
-    <!-- EJERCICIO 2 -->
-    <section>
-      <a href="#" class="link">Pasa el cursor por aquí</a>
+    <hr />
+
+    <section id="ej2">
+      <h2>Ejercicio 2: Link Reescalado y Girado</h2>
+      <a href="#" class="link-transition">¡Pasa el cursor por aquí!</a>
     </section>
 
-    <!-- EJERCICIO 3 -->
-    <section>
+    <hr />
+
+    <section id="ej3">
+      <h2>Ejercicio 3: Círculo con Steps(4)</h2>
       <div class="circulo"></div>
     </section>
   </body>

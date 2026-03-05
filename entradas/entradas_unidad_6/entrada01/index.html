@@ -5,35 +5,88 @@
     <title>Reproductor Accesible</title>
 
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .reproductor-contenedor {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
       audio {
         width: 100%;
         max-width: 400px;
         border-radius: 10px;
         background-color: #222;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: block;
+        margin: 10px auto;
       }
 
       audio::-webkit-media-controls-panel {
         background-color: #444;
       }
+
+      h1 {
+        color: #1db954; /* Spotify green */
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #bbb;
+      }
     </style>
   </head>
 
   <body>
-    <h1>Música de fondo</h1>
+    <h1>SpotiJuanma</h1>
 
-    <audio
-      controls
-      autoplay
-      loop
-      aria-label="Reproductor de música de fondo"
-      role="region"
-    >
-      <source src="audio.mp3" type="audio/mpeg" />
-      <source src="audio.ogg" type="audio/ogg" />
-      <source src="audio.wav" type="audio/wav" />
+    <div class="reproductor-contenedor">
+      <h2>Formato MP3</h2>
+      <audio controls aria-label="Reproductor MP3">
+        <source src="audio.mp3" type="audio/mpeg" />
+        Tu navegador no admite la etiqueta de audio.
+      </audio>
+    </div>
 
-      Tu navegador no admite la etiqueta de audio.
-    </audio>
+    <div class="reproductor-contenedor">
+      <h2>Formato OGG</h2>
+      <audio controls aria-label="Reproductor OGG">
+        <source src="audio.ogg" type="audio/ogg" />
+        Tu navegador no admite la etiqueta de audio.
+      </audio>
+    </div>
+
+    <div class="reproductor-contenedor">
+      <h2>Formato WAV</h2>
+      <audio controls aria-label="Reproductor WAV">
+        <source src="audio.wav" type="audio/wav" />
+        Tu navegador no admite la etiqueta de audio.
+      </audio>
+    </div>
+
+    <div class="reproductor-contenedor">
+      <h2>Reproductor con Autoplay y Bucle</h2>
+      <audio
+        controls
+        autoplay
+        loop
+        aria-label="Reproductor con autoplay y loop"
+      >
+        <source src="audio.mp3" type="audio/mpeg" />
+        <source src="audio.ogg" type="audio/ogg" />
+        <source src="audio.wav" type="audio/wav" />
+        Tu navegador no admite la etiqueta de audio.
+      </audio>
+    </div>
   </body>
 </html>
